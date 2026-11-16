@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Com & Affiliate Assistant — Chrome extension for sellers & affiliates</title>
+  <meta name="description" content="1-click affiliate links, image inspector, bulk ZIP media download and multi-tab product comparison for Amazon, Shopee, AliExpress, eBay & Etsy." />
+  <meta property="og:title" content="E-Com & Affiliate Assistant" />
+  <meta property="og:description" content="1-click affiliate links, bulk product media ZIP and multi-tab comparison for Amazon, Shopee, AliExpress, eBay & Etsy." />
+  <meta property="og:image" content="assets/cover.png" />
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/icon.png" alt="" />E-Com Assistant</a>
+      <div class="nav-links">
+        <a class="hide-sm" href="#features">Features</a>
+        <a class="hide-sm" href="#pricing">Pricing</a>
+        <a class="hide-sm" href="activate.html">Activate</a>
+        <a class="btn btn-primary btn-sm store-only" data-store href="#">Add to Chrome</a>
+        <a class="btn btn-gold btn-sm installed-only" href="#pricing">Go Pro</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <img class="logo" src="assets/icon.png" alt="E-Com & Affiliate Assistant logo" />
+      <span class="eyebrow store-only">Runs 100% in your browser · No AI · Instant</span>
+      <span class="eyebrow eyebrow-ok installed-only">✓ Installed successfully — welcome aboard! 🎉</span>
+      <h1>Your shortcut for product research,<br />listings &amp; affiliate links</h1>
+      <p class="lead">Copy affiliate links in one click, grab every original product photo and video as a ZIP, and compare products from all your open tabs in one table.</p>
+      <div class="ctas store-only">
+        <a class="btn btn-primary" data-store href="#">Add to Chrome — it's free</a>
+        <a class="btn btn-ghost" href="#pricing">See Pro plans</a>
+      </div>
+      <div class="ctas installed-only">
+        <a class="btn btn-primary" href="#getting-started">Set it up in 3 steps ↓</a>
+        <a class="btn btn-ghost" href="#pricing">See Pro plans</a>
+      </div>
+      <p class="platforms">Works on <b>Amazon</b> · <b>Shopee</b> · <b>AliExpress</b> · <b>eBay</b> · <b>Etsy</b></p>
+    </div>
+  </header>
+
+  <!-- Shown only right after install (index.html?installed=1) -->
+  <section id="getting-started" class="alt installed-only">
+    <div class="wrap narrow">
+      <h2>Get started in 3 steps</h2>
+      <p class="sub">Takes less than a minute.</p>
+      <div class="steps">
+        <div class="step">
+          <h3>Pin the extension</h3>
+          <p>Click the puzzle icon <kbd>🧩</kbd> in Chrome's toolbar, then the pin next to <b>E-Com &amp; Affiliate Assistant</b>. Its blue shopping-bag icon stays one click away.</p>
+        </div>
+        <div class="step">
+          <h3>Save your affiliate IDs</h3>
+          <p>Click the extension icon → <b>Affiliate</b> tab, fill in what you have, then <b>Save</b>:</p>
+          <ul>
+            <li><b>Amazon</b> — your Associates tag, e.g. <code>yourtag-20</code></li>
+            <li><b>eBay</b> — your Partner Network Campaign ID</li>
+            <li><b>Shopee</b> — your affiliate ID (numbers only, e.g. <code>17334340417</code>)</li>
+            <li><b>AliExpress / Etsy</b> — your deeplink template containing <code>{url}</code></li>
+          </ul>
+        </div>
+        <div class="step">
+          <h3>Open any product page</h3>
+          <p>On Amazon, Shopee, AliExpress, eBay or Etsy, a floating bar appears in the bottom-right corner:</p>
+          <ul>
+            <li><b>🔗 Copy Aff-Link</b> — copies the clean product link with your ID</li>
+            <li><b>🖼 Images</b> — inspect the resolution &amp; size of every photo and video</li>
+            <li><b>⬇ ZIP</b> and <b>＋ Compare</b> — Pro features</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout mt">
+        💡 <b>Tip:</b> already had product tabs open before installing? Refresh them (F5) so the floating bar appears.
+      </div>
+      <p class="fine">Enjoying it? A ⭐⭐⭐⭐⭐ review on the <a data-store href="#">Chrome Web Store</a> helps a lot!</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>Everything you need on a product page</h2>
+      <p class="sub">A small floating bar appears on product pages. No setup beyond your affiliate IDs.</p>
+      <div class="grid grid-2">
+        <div class="card">
+          <span class="tag-free">FREE</span>
+          <div class="icon">🔗</div>
+          <h3>1-Click Affiliate Link</h3>
+          <p>Cleans the product URL, adds your Amazon Associates tag, eBay Partner Network campaign, Shopee affiliate ID or any custom deeplink (AliExpress, Etsy/Awin), and copies it instantly.</p>
+        </div>
+        <div class="card">
+          <span class="tag-free">FREE</span>
+          <div class="icon">🔍</div>
+          <h3>Image Inspector</h3>
+          <p>See the real resolution, file size and format of every product image and video. Low-resolution images are flagged before you use them in ads.</p>
+        </div>
+        <div class="card">
+          <span class="tag-pro">PRO</span>
+          <div class="icon">📦</div>
+          <h3>Batch Media Downloader</h3>
+          <p>Download the whole album of original, full-size images plus product videos as one tidy <code>.zip</code> — one click. Or save any single file.</p>
+        </div>
+        <div class="card">
+          <span class="tag-pro">PRO</span>
+          <div class="icon">📊</div>
+          <h3>Multi-Tab Product Comparison</h3>
+          <p>Collect price, star rating, reviews, units sold and technical specs from every open product tab into one side-by-side table. Export to Excel or CSV.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap narrow">
+      <h2>Free vs Pro</h2>
+      <p class="sub">Start free. Upgrade when you need speed.</p>
+      <table class="compare">
+        <thead><tr><th>Feature</th><th>Free</th><th class="pro">Pro</th></tr></thead>
+        <tbody>
+          <tr><td>1-click affiliate links (5 marketplaces)</td><td>✓</td><td class="pro">✓</td></tr>
+          <tr><td>Inspect image resolution &amp; file size</td><td>✓</td><td class="pro">✓</td></tr>
+          <tr><td>Download original images &amp; videos</td><td class="no">—</td><td class="pro">✓</td></tr>
+          <tr><td>Whole album + videos → 1 ZIP</td><td class="no">—</td><td class="pro">✓</td></tr>
+          <tr><td>Multi-tab comparison (price, stars, sold, specs)</td><td class="no">—</td><td class="pro">✓</td></tr>
+          <tr><td>Export Excel (.xlsx) &amp; CSV</td><td class="no">—</td><td class="pro">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <h2>Simple pricing</h2>
+      <p class="sub">Secure checkout by Lemon Squeezy. Your license key arrives by email instantly.</p>
+
+      <div class="plans-main">
+        <div class="plan featured">
+          <span class="badge">MOST POPULAR</span>
+          <h3>Yearly</h3>
+          <div class="price">$20<small>/year</small></div>
+          <p>Only $1.66/month — save 58% vs monthly.</p>
+          <a class="btn btn-primary btn-block" data-checkout="yearly" href="#">Get Yearly</a>
+        </div>
+        <div class="plan lifetime">
+          <span class="badge">BEST VALUE</span>
+          <h3>Lifetime Access</h3>
+          <div class="price">$39.99<small> once</small></div>
+          <p>Pay once — the price of 2 years. Yours forever, including future updates.</p>
+          <a class="btn btn-gold btn-block" data-checkout="lifetime" href="#">Own it forever</a>
+        </div>
+      </div>
+
+      <p class="or">or just try it</p>
+      <div class="plans-mini">
+        <div class="plan-row">
+          <div><strong>Weekly Pass</strong>Full Pro for a short campaign</div>
+          <span class="p">$0.99<small>/wk</small></span>
+          <a class="btn btn-ghost btn-sm" data-checkout="weekly" href="#">Try</a>
+        </div>
+        <div class="plan-row">
+          <div><strong>Monthly</strong>Cancel anytime</div>
+          <span class="p">$3.99<small>/mo</small></span>
+          <a class="btn btn-ghost btn-sm" data-checkout="monthly" href="#">Get</a>
+        </div>
+      </div>
+      <p class="fine">Already bought? <a href="activate.html">How to activate your license →</a></p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap narrow">
+      <h2>FAQ</h2>
+      <p class="sub"></p>
+      <details>
+        <summary>Does it send my data anywhere?</summary>
+        <p>No. Everything runs locally in your browser. The only external call is to Lemon Squeezy to check your license key. Read the <a href="privacy.html">privacy policy</a>.</p>
+      </details>
+      <details>
+        <summary>Do I need an affiliate account?</summary>
+        <p>Only for the affiliate link feature — paste your own Amazon tag, eBay campaign ID, Shopee ID or deeplink template. All other features work without one.</p>
+      </details>
+      <details>
+        <summary>How do I cancel a subscription?</summary>
+        <p>Open <a data-portal href="#">your Lemon Squeezy orders</a> and cancel anytime. Pro stays active until the end of the paid period.</p>
+      </details>
+      <details>
+        <summary>How many computers can I use?</summary>
+        <p>One license works on up to 3 browsers. Deactivate on an old one from the ⭐ Pro tab to free a slot.</p>
+      </details>
+      <details>
+        <summary>Need help?</summary>
+        <p>Email <a data-email href="#"></a> — we usually reply within 24 hours.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year"></span> E-Com &amp; Affiliate Assistant</span>
+      <span><a href="privacy.html">Privacy</a><a href="activate.html">Activate license</a><a data-email href="#">Contact</a></span>
+    </div>
+  </footer>
+
+  <script src="site-config.js"></script>
+</body>
+</html>
