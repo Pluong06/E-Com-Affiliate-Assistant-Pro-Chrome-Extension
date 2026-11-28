@@ -3,7 +3,8 @@
  * Price IDs must match ecom-affiliate-assistant/config.js and license-worker/worker.js.
  */
 window.SITE = {
-  chromeStoreUrl: "https://chromewebstore.google.com/detail/YOUR-EXTENSION-ID",
+  chromeStoreUrl: "https://chromewebstore.google.com/detail/e-com-affiliate-assistant/fnjakphncbihefcbhmnmpcjpdljpchpn",
+  kofiUrl: "https://ko-fi.com/pluong06",
   supportEmail: "luongshinichi@gmail.com",
   activateUrl: "https://pluong06.github.io/active-eco/activate.html",
 
@@ -14,7 +15,6 @@ window.SITE = {
 
   // Empty price = plan hidden on the site.
   prices: {
-    weekly: "",
     monthly: "pri_01m83q3fybvvmdg9jfe0k08tme",
     yearly: "pri_01m83q9rf2j6ehw2e7b9rfa52m",
     lifetime: "pri_01m83qcgjdej3gyrjjxm0wqqxd"
@@ -107,6 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
   else if (params.has("_ptxn") && paddleConfigured()) loadPaddle();
 
   document.querySelectorAll("[data-store]").forEach(a => (a.href = S.chromeStoreUrl));
+  document.querySelectorAll("[data-kofi]").forEach(a => (a.href = S.kofiUrl));
   document.querySelectorAll("[data-email]").forEach(a => {
     a.href = `mailto:${S.supportEmail}`;
     if (!a.textContent.trim()) a.textContent = S.supportEmail;
